@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #6a0dad;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .box {
+      flex: 1;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .box1 { background: #ff5733; } /* bright orange */
+    .box2 { background: #28a745; } /* green */
+    .box3 { background: #007bff; } /* blue */
+
+    /* Flexible media */
+    img, video {
+      max-width: 80%;
+      height: auto;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+
+    /* Responsive rule */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .box {
+        font-size: 1rem;
+      }
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Webpage Demo</h1>
+    <p>Resize the browser to see the effect!</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="box box1">
+        <p>Column 1</p>
+        <img src="C:\Users\maria\OneDrive\Desktop\otu.png" alt="Sample image">
+      </div>
+      <div class="box box2">
+        <p>Column 2</p>
+      </div>
+      <div class="box box3">
+        <p>Column 3</p>
+        <img src="C:\Users\maria\OneDrive\Desktop\otu.png" alt="Another sample image">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Mariam</p>
+  </footer>
+</body>
+</html>
